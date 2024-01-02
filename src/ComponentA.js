@@ -1,5 +1,5 @@
 import React from 'react';
-
+import ComponentB from './ComponentB';
 export default class ComponenetA extends React.Component{
     constructor(props){
         super(props);
@@ -15,14 +15,14 @@ export default class ComponenetA extends React.Component{
     }
     
     componentDidMount(){
-        console.log("ComponenetA componentDidMount");
-        
+        console.log("ComponenetA componentDidMount");   
     }
     render(){
         console.log("ComponenetA render");
         return(
             <>
              <h1>{this.state.name}</h1>
+             <ComponentB/>
             </>
         ) 
     }
